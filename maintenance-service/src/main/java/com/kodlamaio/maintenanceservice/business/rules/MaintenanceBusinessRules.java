@@ -41,7 +41,6 @@ public class MaintenanceBusinessRules {
         }
 
     }
-
     public void checkIfIsCompleted(Maintenance maintenance){
         if(!maintenance.isCompleted()){
             throw new BusinessException("please return car before delete maintenance!!!");
