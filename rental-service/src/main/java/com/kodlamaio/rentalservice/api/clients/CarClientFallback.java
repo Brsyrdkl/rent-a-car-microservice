@@ -1,6 +1,7 @@
 package com.kodlamaio.rentalservice.api.clients;
 
 import com.kodlamaio.commonpackage.utils.dto.ClientResponse;
+import com.kodlamaio.commonpackage.utils.dto.GetCarResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -14,5 +15,12 @@ public class CarClientFallback implements CarClient {
         log.info("INVENTORY SERVICE IS DOWN!");
         throw new RuntimeException("INVENTORY-SERVICE NOT AVAILABLE RIGHT NOW!");
     }
+
+    @Override
+    public GetCarResponse checkIfCarInRental(UUID carId) {
+        log.info("INVENTORY SERVICE IS DOWN!");
+        throw new RuntimeException("INVENTORY_SERVICE NOT AVAILABLE RIGHT NOW!");
+    }
+
 
 }
