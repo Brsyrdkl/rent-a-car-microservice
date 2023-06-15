@@ -76,7 +76,7 @@ public class PaymentManager implements PaymentService {
         rules.checkIfPaymentIsValid(request);
         Payment payment = repository.findByCardNumber(request.getCardNumber());
         rules.checkIfBalanceIdEnough(payment.getBalance(), request.getPrice());
-        posService.pay();//fake pos service
+        //posService.pay();//fake pos service
         payment.setBalance(payment.getBalance() - request.getPrice());
         repository.save(payment);
     }

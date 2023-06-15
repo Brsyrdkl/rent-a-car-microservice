@@ -2,8 +2,8 @@ package com.kodlamaio.inventoryservice.business.kafka.consumer;
 
 import com.kodlamaio.commonpackage.events.rental.RentalCreatedEvent;
 import com.kodlamaio.commonpackage.events.rental.RentalDeletedEvent;
+import com.kodlamaio.commonpackage.utils.enums.State;
 import com.kodlamaio.inventoryservice.business.abstracts.CarService;
-import com.kodlamaio.inventoryservice.entities.enums.State;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;

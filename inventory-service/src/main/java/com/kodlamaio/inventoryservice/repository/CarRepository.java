@@ -1,7 +1,7 @@
 package com.kodlamaio.inventoryservice.repository;
 
+import com.kodlamaio.commonpackage.utils.enums.State;
 import com.kodlamaio.inventoryservice.entities.Car;
-import com.kodlamaio.inventoryservice.entities.enums.State;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

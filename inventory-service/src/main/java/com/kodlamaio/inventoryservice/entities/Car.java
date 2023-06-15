@@ -1,6 +1,6 @@
 package com.kodlamaio.inventoryservice.entities;
 
-import com.kodlamaio.inventoryservice.entities.enums.State;
+import com.kodlamaio.commonpackage.utils.enums.State;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
